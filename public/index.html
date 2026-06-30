@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="javascript:void(0)" class="logo" onclick="showPage('home')">Portfolio</a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('services')">Services</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('portfolio')">Portfolio</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('blog')">Blog</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('contact')">Contact</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('careers')">Careers</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('admin')" class="admin-link">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="content">
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to Our Business</h1>
+                    <p>We create amazing digital experiences for your business</p>
+                    <a href="javascript:void(0)" onclick="showPage('portfolio')" class="btn btn-primary">View Our Work</a>
+                    <a href="javascript:void(0)" onclick="showPage('contact')" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Fast Delivery</h3>
+                        <p>We deliver projects on time, every time</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Creative Solutions</h3>
+                        <p>Innovative ideas for your business challenges</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Expert Team</h3>
+                        <p>Skilled professionals dedicated to your success</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-section">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="150">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="25">0</span>
+                            <span class="stat-label">Team Members</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="testimonials-section">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <div class="testimonials-grid" id="testimonials-grid">
+                        <p>Loading testimonials...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-section">
+                <div class="container">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p>Let us help you bring your ideas to life</p>
+                    <a href="javascript:void(0)" onclick="showPage('contact')" class="btn btn-primary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page">
+            <div class="container">
+                <h1 class="page-title">About Us</h1>
+                <div class="about-content" id="about-content">
+                    <p>Loading...</p>
+                </div>
+                <div class="about-sections">
+                    <div class="about-section">
+                        <h2>Our Mission</h2>
+                        <p id="mission-text">Loading...</p>
+                    </div>
+                    <div class="about-section">
+                        <h2>Our Vision</h2>
+                        <p id="vision-text">Loading...</p>
+                    </div>
+                </div>
+                <div class="team-section">
+                    <h2 class="section-title">Meet Our Team</h2>
+                    <div class="team-grid" id="team-grid">
+                        <p>Loading team...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="page">
+            <div class="container">
+                <h1 class="page-title">Our Services</h1>
+                <p class="page-subtitle">What we can do for you</p>
+                <div class="services-grid" id="services-grid">
+                    <p>Loading services...</p>
+                </div>
+                <div class="process-section">
+                    <h2 class="section-title">How We Work</h2>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <h3>Discovery</h3>
+                            <p>We learn about your business, goals, and challenges</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <h3>Strategy</h3>
+                            <p>We create a tailored plan to achieve your objectives</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <h3>Execution</h3>
+                            <p>Our team builds and delivers high-quality solutions</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <h3>Support</h3>
+                            <p>We provide ongoing support and optimization</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-section">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What is your typical project timeline?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Project timelines vary based on scope and complexity. A typical website takes 4-8 weeks, while more complex applications may take 3-6 months. We provide detailed timelines during the discovery phase.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Do you offer ongoing maintenance?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we offer comprehensive maintenance and support packages to keep your website running smoothly, including updates, backups, security monitoring, and performance optimization.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What technologies do you use?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We work with modern technologies including React, Node.js, Python, and cloud platforms like AWS and Google Cloud. We choose the best tech stack based on your specific project requirements.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>How do you ensure project quality?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We follow industry best practices including code reviews, automated testing, continuous integration, and regular client demos to ensure the highest quality deliverables.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="page">
+            <div class="container">
+                <h1 class="page-title">Our Portfolio</h1>
+                <p class="page-subtitle">Check out our latest work</p>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                </div>
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <p>Loading projects...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="page">
+            <div class="container">
+                <h1 class="page-title">Blog</h1>
+                <p class="page-subtitle">Latest news and insights</p>
+                <div class="blog-grid" id="blog-grid">
+                    <p>Loading blog posts...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">Get in touch with us</p>
+                <div class="contact-content">
+                    <div class="contact-info" id="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Loading...</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Loading...</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Loading...</span>
+                        </div>
+                        <div class="social-links" id="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-extras">
+                    <div class="business-hours">
+                        <h3><i class="fas fa-clock"></i> Business Hours</h3>
+                        <div class="hours-list">
+                            <div class="hour-row"><span>Monday - Friday</span><span>9:00 AM - 6:00 PM</span></div>
+                            <div class="hour-row"><span>Saturday</span><span>10:00 AM - 4:00 PM</span></div>
+                            <div class="hour-row"><span>Sunday</span><span>Closed</span></div>
+                        </div>
+                    </div>
+                    <div class="map-section">
+                        <h3><i class="fas fa-map-marked-alt"></i> Our Location</h3>
+                        <div class="map-placeholder">
+                            <i class="fas fa-map"></i>
+                            <p>123 Business Street, Tech City, TC 12345</p>
+                            <span>Find us on Google Maps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="careers" class="page">
+            <div class="container">
+                <h1 class="page-title">Join Our Team</h1>
+                <p class="page-subtitle">Explore career opportunities and grow with us</p>
+                <div class="careers-intro">
+                    <div class="careers-intro-text">
+                        <h2>Why Work With Us?</h2>
+                        <p>We are passionate about creating innovative digital solutions. Our team is made up of talented individuals who thrive in a collaborative, growth-oriented environment. We offer competitive compensation, flexible work arrangements, and opportunities for professional development.</p>
+                    </div>
+                    <div class="careers-benefits">
+                        <div class="benefit-card">
+                            <i class="fas fa-home"></i>
+                            <h4>Remote Friendly</h4>
+                            <p>Work from anywhere</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Growth Opportunities</h4>
+                            <p>Continuous learning</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-heart"></i>
+                            <h4>Great Benefits</h4>
+                            <p>Health & wellness</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Amazing Team</h4>
+                            <p>Collaborative culture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="jobs-section">
+                    <h2 class="section-title">Open Positions</h2>
+                    <div class="jobs-filters">
+                        <select id="job-department-filter" onchange="filterJobs()">
+                            <option value="all">All Departments</option>
+                            <option value="Engineering">Engineering</option>
+                            <option value="Design">Design</option>
+                            <option value="Marketing">Marketing</option>
+                        </select>
+                        <select id="job-type-filter" onchange="filterJobs()">
+                            <option value="all">All Types</option>
+                            <option value="Full-time">Full-time</option>
+                            <option value="Part-time">Part-time</option>
+                            <option value="Contract">Contract</option>
+                        </select>
+                    </div>
+                    <div class="jobs-list" id="jobs-list">
+                        <p>Loading jobs...</p>
+                    </div>
+                </div>
+                <div class="apply-section" id="apply-section" style="display:none;">
+                    <h2 class="section-title">Apply Now</h2>
+                    <form class="apply-form" id="apply-form" onsubmit="submitApplication(event)">
+                        <input type="hidden" id="apply-job-id">
+                        <p id="apply-job-title" class="apply-job-title"></p>
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="text" name="phone" placeholder="Phone Number">
+                        <textarea name="coverLetter" placeholder="Cover Letter / Why you're a great fit" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                        <button type="button" class="btn btn-secondary" onclick="closeApplyForm()">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="admin" class="page">
+            <div class="container">
+                <h1 class="page-title">Content Management</h1>
+                <p class="page-subtitle">Manage your website content</p>
+                
+                <div class="admin-tabs">
+                    <button class="admin-tab active" data-tab="projects">Projects</button>
+                    <button class="admin-tab" data-tab="services">Services</button>
+                    <button class="admin-tab" data-tab="blog">Blog Posts</button>
+                    <button class="admin-tab" data-tab="pages">Pages</button>
+                    <button class="admin-tab" data-tab="testimonials">Testimonials</button>
+                    <button class="admin-tab" data-tab="team">Team</button>
+                    <button class="admin-tab" data-tab="careers-admin">Careers</button>
+                </div>
+
+                <div class="admin-content">
+                    <div class="admin-panel active" id="projects-panel">
+                        <div class="panel-header">
+                            <h2>Manage Projects</h2>
+                            <button class="btn btn-primary" onclick="showAddForm('project')">Add Project</button>
+                        </div>
+                        <div class="admin-list" id="projects-list"></div>
+                        <div class="admin-form" id="project-form" style="display: none;">
+                            <h3>Add/Edit Project</h3>
+                            <form onsubmit="saveProject(event)">
+                                <input type="hidden" id="project-id">
+                                <input type="text" id="project-title" placeholder="Project Title" required>
+                                <textarea id="project-description" placeholder="Description" required></textarea>
+                                <input type="text" id="project-image" placeholder="Image URL" required>
+                                <input type="text" id="project-category" placeholder="Category" required>
+                                <input type="text" id="project-link" placeholder="Project Link" required>
+                                <button type="submit" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-secondary" onclick="hideForm('project')">Cancel</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="admin-panel" id="services-panel">
+                        <div class="panel-header">
+                            <h2>Manage Services</h2>
+                            <button class="btn btn-primary" onclick="showAddForm('service')">Add Service</button>
+                        </div>
+                        <div class="admin-list" id="services-list"></div>
+                        <div class="admin-form" id="service-form" style="display: none;">
+                            <h3>Add/Edit Service</h3>
+                            <form onsubmit="saveService(event)">
+                                <input type="hidden" id="service-id">
+                                <input type="text" id="service-title" placeholder="Service Title" required>
+                                <textarea id="service-description" placeholder="Description" required></textarea>
+                                <select id="service-icon" required>
+                                    <option value="code">Code</option>
+                                    <option value="paint-brush">Design</option>
+                                    <option value="chart-line">Marketing</option>
+                                    <option value="comments">Consulting</option>
+                                </select>
+                                <button type="submit" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-secondary" onclick="hideForm('service')">Cancel</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="admin-panel" id="blog-panel">
+                        <div class="panel-header">
+                            <h2>Manage Blog Posts</h2>
+                            <button class="btn btn-primary" onclick="showAddForm('blog')">Add Post</button>
+                        </div>
+                        <div class="admin-list" id="blog-list"></div>
+                        <div class="admin-form" id="blog-form" style="display: none;">
+                            <h3>Add/Edit Blog Post</h3>
+                            <form onsubmit="saveBlog(event)">
+                                <input type="hidden" id="blog-id">
+                                <input type="text" id="blog-title" placeholder="Post Title" required>
+                                <textarea id="blog-content" placeholder="Content" rows="5" required></textarea>
+                                <input type="text" id="blog-author" placeholder="Author" required>
+                                <button type="submit" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-secondary" onclick="hideForm('blog')">Cancel</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="admin-panel" id="testimonials-panel">
+                        <div class="panel-header">
+                            <h2>Manage Testimonials</h2>
+                            <button class="btn btn-primary" onclick="showAddForm('testimonial')">Add Testimonial</button>
+                        </div>
+                        <div class="admin-list" id="testimonials-list"></div>
+                        <div class="admin-form" id="testimonial-form" style="display:none;">
+                            <h3>Add/Edit Testimonial</h3>
+                            <form onsubmit="saveTestimonial(event)">
+                                <input type="hidden" id="testimonial-id">
+                                <input type="text" id="testimonial-name" placeholder="Client Name" required>
+                                <input type="text" id="testimonial-role" placeholder="Role / Company" required>
+                                <textarea id="testimonial-content" placeholder="Testimonial" rows="3" required></textarea>
+                                <input type="text" id="testimonial-avatar" placeholder="Avatar URL">
+                                <select id="testimonial-rating">
+                                    <option value="5">5 Stars</option>
+                                    <option value="4">4 Stars</option>
+                                    <option value="3">3 Stars</option>
+                                </select>
+                                <button type="submit" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-secondary" onclick="hideForm('testimonial')">Cancel</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="admin-panel" id="team-panel">
+                        <div class="panel-header">
+                            <h2>Manage Team</h2>
+                            <button class="btn btn-primary" onclick="showAddForm('team-member')">Add Member</button>
+                        </div>
+                        <div class="admin-list" id="team-list"></div>
+                        <div class="admin-form" id="team-member-form" style="display:none;">
+                            <h3>Add/Edit Team Member</h3>
+                            <form onsubmit="saveTeamMember(event)">
+                                <input type="hidden" id="team-member-id">
+                                <input type="text" id="team-member-name" placeholder="Full Name" required>
+                                <input type="text" id="team-member-role" placeholder="Role" required>
+                                <textarea id="team-member-bio" placeholder="Bio" rows="2"></textarea>
+                                <input type="text" id="team-member-image" placeholder="Image URL">
+                                <button type="submit" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-secondary" onclick="hideForm('team-member')">Cancel</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="admin-panel" id="careers-admin-panel">
+                        <div class="panel-header">
+                            <h2>Manage Careers</h2>
+                            <button class="btn btn-primary" onclick="showAddForm('career')">Add Job</button>
+                        </div>
+                        <div class="admin-list" id="careers-admin-list"></div>
+                        <div class="admin-form" id="career-form" style="display:none;">
+                            <h3>Add/Edit Job</h3>
+                            <form onsubmit="saveCareer(event)">
+                                <input type="hidden" id="career-id">
+                                <input type="text" id="career-title" placeholder="Job Title" required>
+                                <input type="text" id="career-department" placeholder="Department" required>
+                                <input type="text" id="career-location" placeholder="Location" required>
+                                <select id="career-type">
+                                    <option value="Full-time">Full-time</option>
+                                    <option value="Part-time">Part-time</option>
+                                    <option value="Contract">Contract</option>
+                                </select>
+                                <textarea id="career-description" placeholder="Description" rows="3" required></textarea>
+                                <textarea id="career-requirements" placeholder="Requirements (one per line)" rows="3"></textarea>
+                                <select id="career-status">
+                                    <option value="open">Open</option>
+                                    <option value="closed">Closed</option>
+                                </select>
+                                <button type="submit" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-secondary" onclick="hideForm('career')">Cancel</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="admin-panel" id="pages-panel">
+                        <div class="panel-header">
+                            <h2>Manage Pages</h2>
+                        </div>
+                        <div class="page-editor">
+                            <h3>Edit About Page</h3>
+                            <form onsubmit="saveAbout(event)">
+                                <textarea id="about-content-editor" placeholder="About Content" rows="4"></textarea>
+                                <input type="text" id="about-mission" placeholder="Mission">
+                                <input type="text" id="about-vision" placeholder="Vision">
+                                <button type="submit" class="btn btn-primary">Save About</button>
+                            </form>
+                        </div>
+                        <div class="page-editor">
+                            <h3>Edit Contact Page</h3>
+                            <form onsubmit="saveContact(event)">
+                                <input type="email" id="contact-email" placeholder="Email">
+                                <input type="text" id="contact-phone" placeholder="Phone">
+                                <input type="text" id="contact-address" placeholder="Address">
+                                <button type="submit" class="btn btn-primary">Save Contact</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Business Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

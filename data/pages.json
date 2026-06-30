@@ -1,0 +1,18 @@
+{
+  "about": {
+    "title": "About Us",
+    "content": "We are a dedicated team of professionals committed to delivering excellence in every project we undertake. With years of experience in web development, design, and digital marketing, we help businesses transform their digital presence.",
+    "mission": "To empower businesses with innovative digital solutions that drive growth and success.",
+    "vision": "To be the leading provider of digital transformation solutions worldwide."
+  },
+  "contact": {
+    "email": "akatwijukasamuel6@gmail.com",
+    "phone": "+256 708 198903 / +256788579154",
+    "address": "123 Business Street, KAM City, TC 12345",
+    "social": {
+      "twitter": "#",
+      "linkedin": "#",
+      "github": "#"
+    }
+  }
+}

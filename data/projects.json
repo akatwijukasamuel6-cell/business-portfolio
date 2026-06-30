@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "E-Commerce Platform",
+    "description": "A full-featured online store with payment integration, inventory management, and analytics dashboard.",
+    "image": "/images/project-1.jpg",
+    "category": "Web Development",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "title": "Fitness Tracker App",
+    "description": "Mobile app for tracking workouts, nutrition, and health metrics with social features.",
+    "image": "/images/project-2.jpg",
+    "category": "Mobile App",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "title": "Task Management System",
+    "description": "Collaborative project management tool with real-time updates and team analytics.",
+    "image": "/images/project-3.jpg",
+    "category": "SaaS",
+    "link": "#"
+  }
+]

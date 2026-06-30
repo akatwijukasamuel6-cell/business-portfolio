@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Getting Started with Web Development",
+    "content": "Web development is an exciting journey...",
+    "date": "2026-01-15",
+    "author": "Admin"
+  },
+  {
+    "id": 2,
+    "title": "Best Practices for Modern Websites",
+    "content": "Creating a modern website requires...",
+    "date": "2026-02-01",
+    "author": "Admin"
+  },
+  {
+    "id": 3,
+    "title": "The Future of Digital Marketing",
+    "content": "Digital marketing continues to evolve...",
+    "date": "2026-02-20",
+    "author": "Admin"
+  }
+]

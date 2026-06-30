@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Senior Frontend Developer",
+    "department": "Engineering",
+    "location": "Remote",
+    "type": "Full-time",
+    "description": "We are looking for an experienced frontend developer to join our team and build modern web applications.",
+    "requirements": [
+      "5+ years React experience",
+      "TypeScript proficiency",
+      "UI/UX sensibility"
+    ],
+    "posted": "2026-03-01",
+    "status": "open"
+  },
+  {
+    "id": 2,
+    "title": "Backend Engineer",
+    "department": "Engineering",
+    "location": "San Francisco, CA",
+    "type": "Full-time",
+    "description": "Help us build scalable backend systems that power our platform.",
+    "requirements": [
+      "Node.js expertise",
+      "Database design",
+      "API development"
+    ],
+    "posted": "2026-03-05",
+    "status": "open"
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Designer",
+    "department": "Design",
+    "location": "Remote",
+    "type": "Contract",
+    "description": "Design beautiful and intuitive interfaces for our clients.",
+    "requirements": [
+      "Figma proficiency",
+      "Design systems",
+      "User research"
+    ],
+    "posted": "2026-03-10",
+    "status": "open"
+  }
+]

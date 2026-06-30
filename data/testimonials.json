@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "role": "CEO, TechStart",
+    "content": "Working with this team was an incredible experience. They delivered beyond our expectations.",
+    "avatar": "/images/testimonial-1.jpg",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Michael Chen",
+    "role": "Founder, DesignLab",
+    "content": "Professional, creative, and highly skilled. They transformed our online presence completely.",
+    "avatar": "/images/testimonial-2.jpg",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Emily Rodriguez",
+    "role": "CTO, CloudNine",
+    "content": "The best investment we made for our business. Their solutions are innovative and scalable.",
+    "avatar": "/images/testimonial-3.jpg",
+    "rating": 5
+  }
+]

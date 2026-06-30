@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "role": "CEO & Founder",
+    "bio": "Visionary leader with 15+ years in tech industry.",
+    "image": "/images/team-1.jpg",
+    "social": {
+      "twitter": "#",
+      "linkedin": "#"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Lisa Wang",
+    "role": "CTO",
+    "bio": "Full-stack expert specializing in scalable architectures.",
+    "image": "/images/team-2.jpg",
+    "social": {
+      "twitter": "#",
+      "linkedin": "#"
+    }
+  },
+  {
+    "id": 3,
+    "name": "David Kim",
+    "role": "Design Director",
+    "bio": "Award-winning designer with a passion for UX.",
+    "image": "/images/team-3.jpg",
+    "social": {
+      "twitter": "#",
+      "linkedin": "#"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Anna Petrova",
+    "role": "Marketing Lead",
+    "bio": "Digital marketing strategist driving brand growth.",
+    "image": "/images/team-4.jpg",
+    "social": {
+      "twitter": "#",
+      "linkedin": "#"
+    }
+  }
+]

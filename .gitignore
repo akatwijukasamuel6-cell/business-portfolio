@@ -1,1 +1,14 @@
 node_modules/
+.env
+
+# Runtime data & credentials (never commit)
+data/users.json
+data/messages.json
+data/applications.json
+data/.session-secret
+
+# Uploaded images
+public/uploads/
+
+# Local notes (contains app passwords)
+New folder/

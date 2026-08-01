@@ -342,9 +342,28 @@
 
         <section id="admin" class="page">
             <div class="container">
-                <h1 class="page-title">Content Management</h1>
-                <p class="page-subtitle">Manage your website content</p>
-                
+                <div id="admin-login" class="admin-login">
+                    <h1 class="page-title">Admin Login</h1>
+                    <p class="page-subtitle">Sign in to manage your website content</p>
+                    <form class="admin-login-form" id="admin-login-form">
+                        <input type="text" id="login-username" placeholder="Username" required autocomplete="username">
+                        <input type="password" id="login-password" placeholder="Password" required autocomplete="current-password">
+                        <p id="login-error" class="login-error" style="display:none;"></p>
+                        <button type="submit" class="btn btn-primary" id="login-btn">Sign In</button>
+                    </form>
+                </div>
+
+                <div id="admin-dashboard" style="display:none;">
+                <div class="admin-header">
+                    <div>
+                        <h1 class="page-title">Content Management</h1>
+                        <p class="page-subtitle">Manage your website content</p>
+                    </div>
+                    <div class="admin-user">
+                        <span>Signed in as <strong id="admin-username"></strong></span>
+                        <button class="btn btn-small btn-danger" onclick="logoutAdmin()">Logout</button>
+                    </div>
+                </div>
                 <div class="admin-tabs">
                     <button class="admin-tab active" data-tab="projects">Projects</button>
                     <button class="admin-tab" data-tab="services">Services</button>
@@ -353,6 +372,8 @@
                     <button class="admin-tab" data-tab="testimonials">Testimonials</button>
                     <button class="admin-tab" data-tab="team">Team</button>
                     <button class="admin-tab" data-tab="careers-admin">Careers</button>
+                    <button class="admin-tab" data-tab="applications">Applications</button>
+                    <button class="admin-tab" data-tab="messages">Messages</button>
                 </div>
 
                 <div class="admin-content">
@@ -368,7 +389,14 @@
                                 <input type="hidden" id="project-id">
                                 <input type="text" id="project-title" placeholder="Project Title" required>
                                 <textarea id="project-description" placeholder="Description" required></textarea>
-                                <input type="text" id="project-image" placeholder="Image URL" required>
+                                <div class="image-upload-row">
+                                    <input type="text" id="project-image" placeholder="Image URL" required>
+                                    <div class="image-upload-controls">
+                                        <label for="project-image-upload" class="btn btn-small btn-secondary">Upload Image</label>
+                                        <input type="file" id="project-image-upload" accept="image/*" class="file-input">
+                                        <img id="project-image-preview" class="image-preview" style="display:none;" alt="Preview">
+                                    </div>
+                                </div>
                                 <input type="text" id="project-category" placeholder="Category" required>
                                 <input type="text" id="project-link" placeholder="Project Link" required>
                                 <button type="submit" class="btn btn-primary">Save</button>
@@ -433,7 +461,14 @@
                                 <input type="text" id="testimonial-name" placeholder="Client Name" required>
                                 <input type="text" id="testimonial-role" placeholder="Role / Company" required>
                                 <textarea id="testimonial-content" placeholder="Testimonial" rows="3" required></textarea>
-                                <input type="text" id="testimonial-avatar" placeholder="Avatar URL">
+                                <div class="image-upload-row">
+                                    <input type="text" id="testimonial-avatar" placeholder="Avatar URL">
+                                    <div class="image-upload-controls">
+                                        <label for="testimonial-avatar-upload" class="btn btn-small btn-secondary">Upload Image</label>
+                                        <input type="file" id="testimonial-avatar-upload" accept="image/*" class="file-input">
+                                        <img id="testimonial-avatar-preview" class="image-preview" style="display:none;" alt="Preview">
+                                    </div>
+                                </div>
                                 <select id="testimonial-rating">
                                     <option value="5">5 Stars</option>
                                     <option value="4">4 Stars</option>
@@ -458,7 +493,14 @@
                                 <input type="text" id="team-member-name" placeholder="Full Name" required>
                                 <input type="text" id="team-member-role" placeholder="Role" required>
                                 <textarea id="team-member-bio" placeholder="Bio" rows="2"></textarea>
-                                <input type="text" id="team-member-image" placeholder="Image URL">
+                                <div class="image-upload-row">
+                                    <input type="text" id="team-member-image" placeholder="Image URL">
+                                    <div class="image-upload-controls">
+                                        <label for="team-member-image-upload" class="btn btn-small btn-secondary">Upload Image</label>
+                                        <input type="file" id="team-member-image-upload" accept="image/*" class="file-input">
+                                        <img id="team-member-image-preview" class="image-preview" style="display:none;" alt="Preview">
+                                    </div>
+                                </div>
                                 <button type="submit" class="btn btn-primary">Save</button>
                                 <button type="button" class="btn btn-secondary" onclick="hideForm('team-member')">Cancel</button>
                             </form>
@@ -518,6 +560,22 @@
                             </form>
                         </div>
                     </div>
+
+                    <div class="admin-panel" id="applications-panel">
+                        <div class="panel-header">
+                            <h2>Job Applications</h2>
+                        </div>
+                        <div class="admin-list" id="applications-list"></div>
+                    </div>
+
+                    <div class="admin-panel" id="messages-panel">
+                        <div class="panel-header">
+                            <h2>Contact Messages</h2>
+                            <button class="btn btn-small btn-secondary" onclick="sendTestEmail()">Send Test Email</button>
+                        </div>
+                        <div class="admin-list" id="messages-list"></div>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>

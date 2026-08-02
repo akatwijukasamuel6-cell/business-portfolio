@@ -16,6 +16,10 @@ const nodemailer = require('nodemailer');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Trust one hop so HTTPS/real-IP detection works behind a reverse proxy or
+// load balancer (typical for hosting platforms that terminate TLS).
+app.set('trust proxy', 1);
+
 // ---------------------------------------------------------------------------
 // Data layer
 // ---------------------------------------------------------------------------
@@ -128,7 +132,7 @@ app.use(session({
     cookie: {
         httpOnly: true,
         sameSite: 'strict',
-        secure: process.env.NODE_ENV === 'production',
+        secure: 'auto',
         maxAge: 1000 * 60 * 60 * 8
     }
 }));

@@ -263,14 +263,18 @@ app.post('/api/auth/login', loginLimiter, (req, res) => {
         const user = users.find(u => u.username === username);
 
         if (!user || !bcrypt.compareSync(password, user.passwordHash)) {
-            sendLoginAlert({ username, success: false, ip, userAgent }).catch(() => {});
+            sendLoginAlert({ username, success: false, ip, userAgent }).catch(error => {
+                console.error('Login alert email failed:', error.message);
+            });
             return res.status(401).json({ error: 'Invalid credentials' });
         }
 
         req.session.user = { username: user.username };
         req.session.csrfToken = crypto.randomBytes(24).toString('hex');
 
-        sendLoginAlert({ username: user.username, success: true, ip, userAgent }).catch(() => {});
+        sendLoginAlert({ username: user.username, success: true, ip, userAgent }).catch(error => {
+            console.error('Login alert email failed:', error.message);
+        });
         res.json({ user: { username: user.username }, csrfToken: req.session.csrfToken });
     } catch (error) {
         console.error('Login error:', error);
